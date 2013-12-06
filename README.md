@@ -36,7 +36,11 @@ Where you want to use Fare, import the header file.
 
 ## Objects
 
-- `Bus`
+##### `Bus`
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+| NSString | heading | heading of bus |
+
 	* <code>NSString</code> heading
 	* <code>NSString</code> id
 	* <code>NSString</code> latitude
@@ -44,7 +48,7 @@ Where you want to use Fare, import the header file.
 	* <code>NSString</code> routeID
 	* <code>NSString</code> routeName
 	* <code>NSString</code> busRouteColor
-- `Stop`
+##### `Stop`
 	* <code>NSString</code> id
 	* <code>NSString</code> uniqueName
 	* <code>NSString</code> humanName
@@ -52,24 +56,24 @@ Where you want to use Fare, import the header file.
 	* <code>NSString</code> latitude
 	* <code>NSString</code> longitude
 	* <code>NSString</code> heading
-- `Route`
+##### `Route`
 	* <code>NSString</code> id
 	* <code>NSString</code> name 
 	* <code>NSString</code> color
 	* <code>NSString</code> topOfLoopStopID
 	* <code>BOOL</code> isActive
 	* <code>NSArray</code> stops
-- `Announcement`
+##### `Announcement`
 	* <code>NSString</code> title
 	* <code>NSString</code> text
 	* <code>NSString</code> type
-- `Arrival`
+##### `Arrival`
 	* <code>NSString</code> name
 	* <code>NSString</code> id
 	* <code>NSString</code> topofLoop
 	* <code>NSString</code> busRouteColor
 	* <code>NSArray</code> stops
-	- `ArrivalStop`
+	###### `ArrivalStop`
 		* <code>NSString</code> id1
 		* <code>NSString</code> id2
 		* <code>NSString</code> name
