@@ -36,10 +36,13 @@ Where you want to use Fare, import the header file.
 
 ## Objects
 
-##### `Bus`
+##### Bus
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
 | NSString | heading | heading of bus |
+| NSString | id | id of bus|
+| NSString|latitude|current latitude of bus|
+|NSString|longitude|current longitude of bus|
 
 	* <code>NSString</code> heading
 	* <code>NSString</code> id
