@@ -18,7 +18,7 @@ If you don't already have CocoaPods, install it.
 
 ```ruby
 platform :ios, '7.0'
-pod "Fare", "~> 1.0"
+pod 'Fare', '~> 1.0.2'
 ```
 
 ## Usage
