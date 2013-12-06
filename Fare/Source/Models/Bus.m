@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Jonah Grant. All rights reserved.
 //
 
-#import <MapKit/MapKit.h>
 #import "Bus.h"
 
 @implementation Bus

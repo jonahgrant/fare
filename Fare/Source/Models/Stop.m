@@ -18,5 +18,4 @@
              @"additionalName" : @"additional_name"};
 }
 
-
 @end

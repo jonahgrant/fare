@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Jonah Grant. All rights reserved.
 //
 
-#import <MapKit/MapKit.h>
 #import "ArrivalStop.h"
 
 @implementation ArrivalStop
@@ -17,6 +16,5 @@
     return @{@"timeOfArrival" : @"toa1",
              @"timeOfArrival2" : @"toa2"};
 }
-
 
 @end
