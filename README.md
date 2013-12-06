@@ -1,14 +1,21 @@
 # Fare
 The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around their [API](https://github.com/magic-bus/api-documentation/).
 
-## Installation
+### Installation with CocoaPods
 
-If you don't have [Cocoapods](http://cocoapods.org), install it.
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like Fare in your projects.
 
-        gem install cocoapods
-        pod setup
-        
-Install by adding `pod 'Fare'` to your `Podfile` and then run `pod install` to integrate it with your Xcode project.
+If you don't already have CocoaPods, install it.
+
+		gem install cocoapods
+		pod install
+
+#### Podfile
+
+```ruby
+platform :ios, '7.0'
+pod "Fare", "~> 1.0"
+```
 
 ## Usage
 
@@ -20,18 +27,65 @@ Where you want to use Fare, import the header file.
 
 ## Methods
 
-- **<code>GET</code> -fetchArrivalsWithSuccessBlock:errorBlock:**
-- **<code>GET</code> -fetchBusesWithSuccessBlock:errorBlock:**
-- **<code>GET</code> -fetchStopsWithSuccessBlock:errorBlock:**
-- **<code>GET</code> -fetchRoutesWithSuccessBlock:errorBlock:**
-- **<code>GET</code> -fetchAnnouncementsWithSuccessBlock:errorBlock:**
-- **<code>GET</code> -fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:**
+- **<code>GET</code> `-fetchArrivalsWithSuccessBlock:errorBlock:`**
+- **<code>GET</code> `-fetchBusesWithSuccessBlock:errorBlock:`**
+- **<code>GET</code> `-fetchStopsWithSuccessBlock:errorBlock:`**
+- **<code>GET</code> `-fetchRoutesWithSuccessBlock:errorBlock:`**
+- **<code>GET</code> `-fetchAnnouncementsWithSuccessBlock:errorBlock:`**
+- **<code>GET</code> `-fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:`**
 
+## Objects
+
+- `Bus`
+	* <code>NSString</code> heading
+	* <code>NSString</code> id
+	* <code>NSString</code> latitude
+	* <code>NSString</code> longitude
+	* <code>NSString</code> routeID
+	* <code>NSString</code> routeName
+	* <code>NSString</code> busRouteColor
+- `Stop`
+	* <code>NSString</code> id
+	* <code>NSString</code> uniqueName
+	* <code>NSString</code> humanName
+	* <code>NSString</code> additionalName
+	* <code>NSString</code> latitude
+	* <code>NSString</code> longitude
+	* <code>NSString</code> heading
+- `Route`
+	* <code>NSString</code> id
+	* <code>NSString</code> name 
+	* <code>NSString</code> color
+	* <code>NSString</code> topOfLoopStopID
+	* <code>BOOL</code> isActive
+	* <code>NSArray</code> stops
+- `Announcement`
+	* <code>NSString</code> title
+	* <code>NSString</code> text
+	* <code>NSString</code> type
+- `Arrival`
+	* <code>NSString</code> name
+	* <code>NSString</code> id
+	* <code>NSString</code> topofLoop
+	* <code>NSString</code> busRouteColor
+	* <code>NSArray</code> stops
+	- `ArrivalStop`
+		* <code>NSString</code> id1
+		* <code>NSString</code> id2
+		* <code>NSString</code> name
+		* <code>NSString</code> name2
+		* <code>NSString</code> name3
+		* <code>NSString</code> latitude
+		* <code>NSString</code> longitude
+		* <code>NSString</code> heading
+		* <code>NSTimeInterval</code> timeOfArrival
+		* <code>NSTimeInterval</code> timeOfArrival2
+		
 ## Example
 
 If I want to log the latitude and longitudes of each bus currently operating, I would import `UMNetworkingSession.h` and `Bus.h` into my header file.
 
-In my `-viewDidLoad` I added:
+In my `-viewDidLoad`, I would add:
 
 ````objc
     UMNetworkingSession *networkingSession = [[UMNetworkingSession alloc] init];
