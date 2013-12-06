@@ -13,5 +13,5 @@
 @property (strong, nonatomic) NSString *id, *name, *color, *topOfLoopStopID;
 @property (nonatomic) BOOL isActive;
 @property (strong, nonatomic) NSArray *stops;
-
+    
 @end
