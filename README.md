@@ -39,54 +39,59 @@ Where you want to use Fare, import the header file.
 ##### Bus
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
-| NSString | heading | heading of bus |
-| NSString | id | id of bus|
-| NSString|latitude|current latitude of bus|
-|NSString|longitude|current longitude of bus|
-
-	* <code>NSString</code> heading
-	* <code>NSString</code> id
-	* <code>NSString</code> latitude
-	* <code>NSString</code> longitude
-	* <code>NSString</code> routeID
-	* <code>NSString</code> routeName
-	* <code>NSString</code> busRouteColor
-##### `Stop`
-	* <code>NSString</code> id
-	* <code>NSString</code> uniqueName
-	* <code>NSString</code> humanName
-	* <code>NSString</code> additionalName
-	* <code>NSString</code> latitude
-	* <code>NSString</code> longitude
-	* <code>NSString</code> heading
-##### `Route`
-	* <code>NSString</code> id
-	* <code>NSString</code> name 
-	* <code>NSString</code> color
-	* <code>NSString</code> topOfLoopStopID
-	* <code>BOOL</code> isActive
-	* <code>NSArray</code> stops
-##### `Announcement`
-	* <code>NSString</code> title
-	* <code>NSString</code> text
-	* <code>NSString</code> type
-##### `Arrival`
-	* <code>NSString</code> name
-	* <code>NSString</code> id
-	* <code>NSString</code> topofLoop
-	* <code>NSString</code> busRouteColor
-	* <code>NSArray</code> stops
-	###### `ArrivalStop`
-		* <code>NSString</code> id1
-		* <code>NSString</code> id2
-		* <code>NSString</code> name
-		* <code>NSString</code> name2
-		* <code>NSString</code> name3
-		* <code>NSString</code> latitude
-		* <code>NSString</code> longitude
-		* <code>NSString</code> heading
-		* <code>NSTimeInterval</code> timeOfArrival
-		* <code>NSTimeInterval</code> timeOfArrival2
+| `NSString` | heading | heading of bus |
+| `NSString` | id | the bus ID|
+| `NSString`|latitude|current latitude of bus|
+|`NSString`|longitude|current longitude of bus|
+|`NSString`|routeID|the route ID that the bus is operating on|
+|`NSString`|routeName|the name of the route that the bus is operating on|
+|`NSString`|busRouteColor|a hex color representing route color|
+##### Stop
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+|`NSString`|id|id of the stop|
+|`NSString`|uniqueName|a stop's unique name|
+|`NSString`|humanName|a stop's human name|
+|`NSString`|additionalName|an extra name if a stop needs it|
+|`NSString`|latitude|the latitude that the stop resides on|
+|`NSString`|longitude|the longitude that the stop resides on|
+|`NSString`|heading|the heading that the stop faces|
+##### Route
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+|`NSString`|id|the route's ID|
+|`NSString`|name|the name of the route|
+|`NSString`|color|a hex color representing the route|
+|`NSString`|topOfLoopStopID|ID of the stop that represents the route ending|
+|`BOOL`|isActive|boolean representing if the route is operating|
+|`NSArray`|stops|array of `Stop` objects that the route frequents|
+##### Announcement
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+|`NSString`|title|title of the announcement|
+|`NSString`|text|content of the announcement|
+|`NSString`|type|type of announcement|
+##### Arrival
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+|`NSString`|name|name of the route that is arriving|
+|`NSString`|id|id of the arriving route|
+|`NSString`|topOfLoop|id of stop that represents route ending|
+|`NSString`|busRouteColor|hex color representing the arriving route|
+|`NSArray`|stop|array of `ArrivalStop` objects that represents stops that the arriving route frequents|
+##### ArrivalStop
+| Property | Name    | Purpose   |
+| -------- | --------| --------- |
+|`NSString`|id1|first id|
+|`NSString`|id2|second id|
+|`NSString`|name|name of stop|
+|`NSString`|name2|secondary name of stop|
+|`NSString`|name3|third name of stop|
+|`NSString`|latitude|latitude that the stop resides on|
+|`NSString`|longitude|longitude that the stop resides on|
+|`NSString`|heading|heading that the stop faces|
+|`NSTimeInterval`|timeOfArrival|seconds until the bus arrives at this stop|
+|`NSTimeInterval`|timeOfArrival2|seconds until the second bus arrives at this stop|
 		
 ## Example
 
