@@ -7,66 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38A099CD2F3142CF9450954F /* libPods-Fare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC2387506B84234AFA02686 /* libPods-Fare.a */; };
-		AB0D986E185159D40091F276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
-		AB0D9870185159D40091F276 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986F185159D40091F276 /* CoreGraphics.framework */; };
-		AB0D9872185159D40091F276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D9871185159D40091F276 /* UIKit.framework */; };
-		AB0D9887185159D40091F276 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D9886185159D40091F276 /* XCTest.framework */; };
-		AB0D9888185159D40091F276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
-		AB0D9889185159D40091F276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D9871185159D40091F276 /* UIKit.framework */; };
-		AB0D9891185159D40091F276 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB0D988F185159D40091F276 /* InfoPlist.strings */; };
-		AB0D9893185159D40091F276 /* FareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D9892185159D40091F276 /* FareTests.m */; };
-		AB0D98AC18515A120091F276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0D989E18515A110091F276 /* Images.xcassets */; };
-		AB0D98AD18515A120091F276 /* Fare-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB0D98A118515A110091F276 /* Fare-Info.plist */; };
-		AB0D98B218515A670091F276 /* UMNetworkingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B118515A670091F276 /* UMNetworkingSession.m */; };
-		AB0D98B918515C9F0091F276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B618515C9F0091F276 /* AppDelegate.m */; };
-		AB0D98BA18515C9F0091F276 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B818515C9F0091F276 /* main.m */; };
-		AB0D98BD1851623F0091F276 /* UMResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */; };
-		AB0D98CD185166030091F276 /* Arrival.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98CC185166030091F276 /* Arrival.m */; };
-		AB0D98D7185175C30091F276 /* ArrivalStop.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98D6185175C30091F276 /* ArrivalStop.m */; };
-		ABF4656518517D3F008D239D /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656418517D3F008D239D /* Bus.m */; };
-		ABF4656818517E7C008D239D /* Announcement.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656718517E7C008D239D /* Announcement.m */; };
-		ABF4656B18517F04008D239D /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656A18517F04008D239D /* Route.m */; };
-		ABF4656E185180CB008D239D /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656D185180CB008D239D /* Stop.m */; };
-		ABF465711851837E008D239D /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
+		AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AB0D988A185159D40091F276 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB0D9862185159D40091F276 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB0D9869185159D40091F276;
-			remoteInfo = Fare;
+/* Begin PBXCopyFilesBuildPhase section */
+		AB708C72185265C900AC01E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fare.xcconfig"; path = "Pods/Pods-Fare.xcconfig"; sourceTree = "<group>"; };
 		6EC2387506B84234AFA02686 /* libPods-Fare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0D986A185159D40091F276 /* Fare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D986D185159D40091F276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB0D986F185159D40091F276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB0D9871185159D40091F276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		AB0D9885185159D40091F276 /* FareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D9886185159D40091F276 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AB0D988E185159D40091F276 /* FareTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FareTests-Info.plist"; sourceTree = "<group>"; };
-		AB0D9890185159D40091F276 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB0D9892185159D40091F276 /* FareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FareTests.m; sourceTree = "<group>"; };
 		AB0D989E18515A110091F276 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB0D98A118515A110091F276 /* Fare-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fare-Info.plist"; sourceTree = "<group>"; };
 		AB0D98B018515A670091F276 /* UMNetworkingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMNetworkingSession.h; sourceTree = "<group>"; };
 		AB0D98B118515A670091F276 /* UMNetworkingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMNetworkingSession.m; sourceTree = "<group>"; };
-		AB0D98B518515C9F0091F276 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AB0D98B618515C9F0091F276 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AB0D98B718515C9F0091F276 /* Fare-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fare-Prefix.pch"; sourceTree = "<group>"; };
-		AB0D98B818515C9F0091F276 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB0D98BB1851623F0091F276 /* UMResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMResponseSerializer.h; sourceTree = "<group>"; };
 		AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMResponseSerializer.m; sourceTree = "<group>"; };
 		AB0D98CB185166030091F276 /* Arrival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrival.h; sourceTree = "<group>"; };
 		AB0D98CC185166030091F276 /* Arrival.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrival.m; sourceTree = "<group>"; };
 		AB0D98D5185175C30091F276 /* ArrivalStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalStop.h; sourceTree = "<group>"; };
 		AB0D98D6185175C30091F276 /* ArrivalStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalStop.m; sourceTree = "<group>"; };
+		AB708C74185265C900AC01E5 /* libFare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF4656318517D3F008D239D /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
 		ABF4656418517D3F008D239D /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
 		ABF4656618517E7C008D239D /* Announcement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Announcement.h; sourceTree = "<group>"; };
@@ -82,24 +56,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB0D9867185159D40091F276 /* Frameworks */ = {
+		AB708C71185265C900AC01E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0D9870185159D40091F276 /* CoreGraphics.framework in Frameworks */,
-				AB0D9872185159D40091F276 /* UIKit.framework in Frameworks */,
-				AB0D986E185159D40091F276 /* Foundation.framework in Frameworks */,
-				38A099CD2F3142CF9450954F /* libPods-Fare.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB0D9882185159D40091F276 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB0D9887185159D40091F276 /* XCTest.framework in Frameworks */,
-				AB0D9889185159D40091F276 /* UIKit.framework in Frameworks */,
-				AB0D9888185159D40091F276 /* Foundation.framework in Frameworks */,
+				AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +72,6 @@
 			children = (
 				AB0D98A218515A110091F276 /* Source */,
 				AB0D989C18515A110091F276 /* Resources */,
-				AB0D988C185159D40091F276 /* FareTests */,
 				AB0D986C185159D40091F276 /* Frameworks */,
 				AB0D986B185159D40091F276 /* Products */,
 				40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */,
@@ -121,8 +81,7 @@
 		AB0D986B185159D40091F276 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB0D986A185159D40091F276 /* Fare.app */,
-				AB0D9885185159D40091F276 /* FareTests.xctest */,
+				AB708C74185265C900AC01E5 /* libFare.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,24 +96,6 @@
 				6EC2387506B84234AFA02686 /* libPods-Fare.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB0D988C185159D40091F276 /* FareTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB0D9892185159D40091F276 /* FareTests.m */,
-				AB0D988D185159D40091F276 /* Supporting Files */,
-			);
-			path = FareTests;
-			sourceTree = "<group>";
-		};
-		AB0D988D185159D40091F276 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB0D988E185159D40091F276 /* FareTests-Info.plist */,
-				AB0D988F185159D40091F276 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		AB0D989C18515A110091F276 /* Resources */ = {
@@ -210,20 +151,9 @@
 		AB0D98B318515C9F0091F276 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				AB0D98B418515C9F0091F276 /* App Delegate */,
 				AB0D98B718515C9F0091F276 /* Fare-Prefix.pch */,
-				AB0D98B818515C9F0091F276 /* main.m */,
 			);
 			path = Misc;
-			sourceTree = "<group>";
-		};
-		AB0D98B418515C9F0091F276 /* App Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				AB0D98B518515C9F0091F276 /* AppDelegate.h */,
-				AB0D98B618515C9F0091F276 /* AppDelegate.m */,
-			);
-			path = "App Delegate";
 			sourceTree = "<group>";
 		};
 		AB0D98CA185165F80091F276 /* Models */ = {
@@ -250,15 +180,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB0D9869185159D40091F276 /* Fare */ = {
+		AB708C73185265C900AC01E5 /* Fare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB0D9896185159D40091F276 /* Build configuration list for PBXNativeTarget "Fare" */;
+			buildConfigurationList = AB708C90185265C900AC01E5 /* Build configuration list for PBXNativeTarget "Fare" */;
 			buildPhases = (
-				7ECF3ECDBACE4FA394B1A65E /* Check Pods Manifest.lock */,
-				AB0D9866185159D40091F276 /* Sources */,
-				AB0D9867185159D40091F276 /* Frameworks */,
-				AB0D9868185159D40091F276 /* Resources */,
-				DDD737B581FA4E89B389F795 /* Copy Pods Resources */,
+				AB708C70185265C900AC01E5 /* Sources */,
+				AB708C71185265C900AC01E5 /* Frameworks */,
+				AB708C72185265C900AC01E5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -266,26 +194,8 @@
 			);
 			name = Fare;
 			productName = Fare;
-			productReference = AB0D986A185159D40091F276 /* Fare.app */;
-			productType = "com.apple.product-type.application";
-		};
-		AB0D9884185159D40091F276 /* FareTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB0D9899185159D40091F276 /* Build configuration list for PBXNativeTarget "FareTests" */;
-			buildPhases = (
-				AB0D9881185159D40091F276 /* Sources */,
-				AB0D9882185159D40091F276 /* Frameworks */,
-				AB0D9883185159D40091F276 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB0D988B185159D40091F276 /* PBXTargetDependency */,
-			);
-			name = FareTests;
-			productName = FareTests;
-			productReference = AB0D9885185159D40091F276 /* FareTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = AB708C74185265C900AC01E5 /* libFare.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -295,11 +205,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = jonahgrant;
-				TargetAttributes = {
-					AB0D9884185159D40091F276 = {
-						TestTargetID = AB0D9869185159D40091F276;
-					};
-				};
 			};
 			buildConfigurationList = AB0D9865185159D40091F276 /* Build configuration list for PBXProject "Fare" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -313,112 +218,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB0D9869185159D40091F276 /* Fare */,
-				AB0D9884185159D40091F276 /* FareTests */,
+				AB708C73185265C900AC01E5 /* Fare */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		AB0D9868185159D40091F276 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB0D98AD18515A120091F276 /* Fare-Info.plist in Resources */,
-				AB0D98AC18515A120091F276 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB0D9883185159D40091F276 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB0D9891185159D40091F276 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7ECF3ECDBACE4FA394B1A65E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DDD737B581FA4E89B389F795 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Fare-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		AB0D9866185159D40091F276 /* Sources */ = {
+		AB708C70185265C900AC01E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0D98BD1851623F0091F276 /* UMResponseSerializer.m in Sources */,
-				AB0D98B918515C9F0091F276 /* AppDelegate.m in Sources */,
-				AB0D98BA18515C9F0091F276 /* main.m in Sources */,
-				ABF465711851837E008D239D /* TraceRoute.m in Sources */,
-				AB0D98B218515A670091F276 /* UMNetworkingSession.m in Sources */,
-				ABF4656B18517F04008D239D /* Route.m in Sources */,
-				ABF4656518517D3F008D239D /* Bus.m in Sources */,
-				AB0D98CD185166030091F276 /* Arrival.m in Sources */,
-				ABF4656818517E7C008D239D /* Announcement.m in Sources */,
-				AB0D98D7185175C30091F276 /* ArrivalStop.m in Sources */,
-				ABF4656E185180CB008D239D /* Stop.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB0D9881185159D40091F276 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB0D9893185159D40091F276 /* FareTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB0D988B185159D40091F276 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB0D9869185159D40091F276 /* Fare */;
-			targetProxy = AB0D988A185159D40091F276 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AB0D988F185159D40091F276 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB0D9890185159D40091F276 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AB0D9894185159D40091F276 /* Debug */ = {
@@ -493,73 +306,33 @@
 			};
 			name = Release;
 		};
-		AB0D9897185159D40091F276 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fare/Source/Misc/Fare-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Fare/Resources/Misc/Fare-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		AB0D9898185159D40091F276 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fare/Source/Misc/Fare-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Fare/Resources/Misc/Fare-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		AB0D989A185159D40091F276 /* Debug */ = {
+		AB708C91185265C900AC01E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fare.app/Fare";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				DSTROOT = /tmp/Fare.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fare/Fare-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FareTests/FareTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		AB0D989B185159D40091F276 /* Release */ = {
+		AB708C92185265C900AC01E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fare.app/Fare";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				DSTROOT = /tmp/Fare.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fare/Fare-Prefix.pch";
-				INFOPLIST_FILE = "FareTests/FareTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -575,20 +348,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB0D9896185159D40091F276 /* Build configuration list for PBXNativeTarget "Fare" */ = {
+		AB708C90185265C900AC01E5 /* Build configuration list for PBXNativeTarget "Fare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB0D9897185159D40091F276 /* Debug */,
-				AB0D9898185159D40091F276 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB0D9899185159D40091F276 /* Build configuration list for PBXNativeTarget "FareTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB0D989A185159D40091F276 /* Debug */,
-				AB0D989B185159D40091F276 /* Release */,
+				AB708C91185265C900AC01E5 /* Debug */,
+				AB708C92185265C900AC01E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
