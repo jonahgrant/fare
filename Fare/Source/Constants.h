@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 jonahgrant. All rights reserved.
 //
 
-static NSString * kUMRootURL = @"http://mbus.pts.umich.edu";
+static NSString * kUMRootURL = @"http://mbus.pts.umich.edu/";
 
 static NSString *kUMAPIFetchArrivals        = @"shared/public_feed.xml";
 static NSString *kUMAPIFetchBuses           = @"shared/location_feed.xml";
