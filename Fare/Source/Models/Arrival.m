@@ -8,7 +8,6 @@
 
 #import "Arrival.h"
 #import "Stop.h"
-#import "UIColor+Fare.h"
 
 @implementation Arrival
 

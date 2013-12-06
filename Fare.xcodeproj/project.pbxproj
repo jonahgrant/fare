@@ -29,7 +29,6 @@
 		ABF4656B18517F04008D239D /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656A18517F04008D239D /* Route.m */; };
 		ABF4656E185180CB008D239D /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656D185180CB008D239D /* Stop.m */; };
 		ABF465711851837E008D239D /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
-		ABF465751851862B008D239D /* UIColor+Fare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465741851862B008D239D /* UIColor+Fare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +77,6 @@
 		ABF4656D185180CB008D239D /* Stop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stop.m; sourceTree = "<group>"; };
 		ABF4656F1851837E008D239D /* TraceRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraceRoute.h; sourceTree = "<group>"; };
 		ABF465701851837E008D239D /* TraceRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraceRoute.m; sourceTree = "<group>"; };
-		ABF465731851862B008D239D /* UIColor+Fare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Fare.h"; sourceTree = "<group>"; };
-		ABF465741851862B008D239D /* UIColor+Fare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Fare.m"; sourceTree = "<group>"; };
 		ABF4657618518809008D239D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABF4657918518843008D239D /* Objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,7 +201,6 @@
 				AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */,
 				ABF4657618518809008D239D /* Constants.h */,
 				ABF4657918518843008D239D /* Objects.h */,
-				ABF4657218518620008D239D /* Additions */,
 				AB0D98CA185165F80091F276 /* Models */,
 			);
 			name = Source;
@@ -249,15 +245,6 @@
 				ABF465701851837E008D239D /* TraceRoute.m */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		ABF4657218518620008D239D /* Additions */ = {
-			isa = PBXGroup;
-			children = (
-				ABF465731851862B008D239D /* UIColor+Fare.h */,
-				ABF465741851862B008D239D /* UIColor+Fare.m */,
-			);
-			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,7 +380,6 @@
 				AB0D98BD1851623F0091F276 /* UMResponseSerializer.m in Sources */,
 				AB0D98B918515C9F0091F276 /* AppDelegate.m in Sources */,
 				AB0D98BA18515C9F0091F276 /* main.m in Sources */,
-				ABF465751851862B008D239D /* UIColor+Fare.m in Sources */,
 				ABF465711851837E008D239D /* TraceRoute.m in Sources */,
 				AB0D98B218515A670091F276 /* UMNetworkingSession.m in Sources */,
 				ABF4656B18517F04008D239D /* Route.m in Sources */,
