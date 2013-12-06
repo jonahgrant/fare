@@ -10,6 +10,8 @@
 
 @interface Announcement : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *title, *text, *type;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *type;
 
 @end

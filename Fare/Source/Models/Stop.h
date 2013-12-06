@@ -10,6 +10,12 @@
 
 @interface Stop : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *id, *uniqueName, *humanName, *additionalName, *latitude, *longitude, *heading;
+@property (nonatomic, copy) NSString *id;
+@property (nonatomic, copy) NSString *uniqueName;
+@property (nonatomic, copy) NSString *humanName;
+@property (nonatomic, copy) NSString *additionalName;
+@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, copy) NSString *heading;
 
 @end

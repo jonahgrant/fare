@@ -10,7 +10,15 @@
 
 @interface ArrivalStop : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *id1, *id2, *name, *name2, *name3, *latitude, *longitude, *heading;
-@property (nonatomic) NSTimeInterval timeOfArrival, timeOfArrival2;
+@property (nonatomic, copy) NSString *id1;
+@property (nonatomic, copy) NSString *id2;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *name2;
+@property (nonatomic, copy) NSString *name3;
+@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, copy) NSString *heading;
+@property (nonatomic) NSTimeInterval timeOfArrival
+@property (nonatomic) NSTimeInterval timeOfArrival2;
 
 @end

@@ -10,6 +10,8 @@
 
 @implementation Announcement
 
+#pragma mark MTLJSONSerializing
+
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{};
 }

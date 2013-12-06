@@ -10,6 +10,12 @@
 
 @interface Bus : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *heading, *id, *latitude, *longitude, *routeID, *routeName, *busRouteColor;
+@property (nonatomic, copy) NSString *heading;
+@property (nonatomic, copy) NSString *id;
+@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, copy) NSString *routeID;
+@property (nonatomic, copy) NSString *routeName;
+@property (nonatomic, copy) NSString *busRouteColor;
 
 @end
