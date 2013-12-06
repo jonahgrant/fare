@@ -1,10 +1,12 @@
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c90b796cb40612af459840b74157e8a8 "githalytics.com")](http://githalytics.com/jonahgrant/fare)
+# Fare 
+The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around the [API](https://github.com/magic-bus/api-documentation/).
 
-# Fare
-The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around their [API](https://github.com/magic-bus/api-documentation/).
+### Dependencies
+
+Fare runs with the help of a couple awesome projects.  [AFNetworking](https://github.com/AFNetworking/AFNetworking) runs asynchronous network requests faster than Usain Bolt behind chased by a Ferrari. [Mantle](https://github.com/github/Mantle) helps the project turn "abc" into "A" "B" and "C" which sounds pretty dumb at first, but trust me: it's awesome.  [XMLDictionary](https://github.com/nicklockwood/XMLDictionary) converts a long-lost cryptic language once thought to be extinct into something that's actually usable.  And lastly, [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) ties everything all together by merging together values throughout the project allowing value and property updates so silky smooth that they would make the founders of I Can't Believe It's Not Butter! jealous.
 
 ### Installation with CocoaPods
-
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c90b796cb40612af459840b74157e8a8 "githalytics.com")](http://githalytics.com/jonahgrant/fare)
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like Fare in your projects.
 
 If you don't already have CocoaPods, install it.
