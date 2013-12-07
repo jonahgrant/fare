@@ -8,6 +8,8 @@
 
 #import "Mantle.h"
 
+@class ArrivalStop;
+
 @interface Arrival : MTLModel <MTLJSONSerializing>
 
 /**********************
@@ -48,5 +50,7 @@
  Returns an NSArray of ArrivalStop objects
  */
 @property (strong, nonatomic) NSArray *stops;
+
+- (ArrivalStop *)stopClosestToCoordinate:(CLLocationCoordinate2D)coordinate;
 
 @end

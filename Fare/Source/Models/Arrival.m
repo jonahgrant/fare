@@ -53,6 +53,30 @@
     }];
 }
 
+- (ArrivalStop *)stopClosestToCoordinate:(CLLocationCoordinate2D)coordinate {
+    NSArray *sortedStops = [self.stops sortedArrayUsingComparator: ^(id a, id b) {
+        ArrivalStop *stop1 = (ArrivalStop *)a;
+        ArrivalStop *stop2 = (ArrivalStop *)b;
+        
+        CLLocation *destination = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+        CLLocation *stop1Location = [[CLLocation alloc] initWithLatitude:[stop1.latitude doubleValue] longitude:[stop1.longitude doubleValue]];
+        CLLocation *stop2Location = [[CLLocation alloc] initWithLatitude:[stop2.latitude doubleValue] longitude:[stop2.longitude doubleValue]];
+        
+        CLLocationDistance dist_a = [stop1Location distanceFromLocation:destination];
+        CLLocationDistance dist_b = [stop2Location distanceFromLocation:destination];
+        
+        if (dist_a < dist_b) {
+            return (NSComparisonResult)NSOrderedAscending;
+        } else if (dist_a > dist_b) {
+            return (NSComparisonResult)NSOrderedDescending;
+        } else {
+            return (NSComparisonResult)NSOrderedSame;
+        }
+    }];
+    
+    return sortedStops.firstObject;
+}
+
 #pragma mark MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
