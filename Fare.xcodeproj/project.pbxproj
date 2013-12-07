@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194A282DD79B4E0FB3E1C601 /* libPods-Fare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC2387506B84234AFA02686 /* libPods-Fare.a */; };
+		207CA42ECFDF43788A7F693D /* libPods-FareTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9913EE6CB448E695384432 /* libPods-FareTest.a */; };
+		AB30068C1852F457007A4E29 /* NSDictionary+FareAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */; };
+		AB3006921852F4CE007A4E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
+		AB3006931852F4CE007A4E29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986F185159D40091F276 /* CoreGraphics.framework */; };
+		AB3006941852F4CE007A4E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D9871185159D40091F276 /* UIKit.framework */; };
+		AB30069A1852F4CE007A4E29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3006981852F4CE007A4E29 /* InfoPlist.strings */; };
+		AB30069C1852F4CE007A4E29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30069B1852F4CE007A4E29 /* main.m */; };
+		AB3006A01852F4CE007A4E29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30069F1852F4CE007A4E29 /* AppDelegate.m */; };
+		AB3006A21852F4CE007A4E29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3006A11852F4CE007A4E29 /* Images.xcassets */; };
+		AB3006BC1852F5A2007A4E29 /* UMNetworkingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B118515A670091F276 /* UMNetworkingSession.m */; };
+		AB3006BD1852F5A2007A4E29 /* UMResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */; };
+		AB3006BE1852F5A2007A4E29 /* Arrival.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98CC185166030091F276 /* Arrival.m */; };
+		AB3006BF1852F5A2007A4E29 /* ArrivalStop.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98D6185175C30091F276 /* ArrivalStop.m */; };
+		AB3006C01852F5A2007A4E29 /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656D185180CB008D239D /* Stop.m */; };
+		AB3006C11852F5A2007A4E29 /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656418517D3F008D239D /* Bus.m */; };
+		AB3006C21852F5A2007A4E29 /* Announcement.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656718517E7C008D239D /* Announcement.m */; };
+		AB3006C31852F5A2007A4E29 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656A18517F04008D239D /* Route.m */; };
+		AB3006C41852F5A2007A4E29 /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
+		AB3006C61852F5E5007A4E29 /* UMNetworkingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B118515A670091F276 /* UMNetworkingSession.m */; };
+		AB3006C71852F5F0007A4E29 /* UMResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */; };
+		AB3006C81852F5F3007A4E29 /* NSDictionary+FareAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */; };
+		AB3006C91852F5FA007A4E29 /* Arrival.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98CC185166030091F276 /* Arrival.m */; };
+		AB3006CA1852F5FC007A4E29 /* ArrivalStop.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98D6185175C30091F276 /* ArrivalStop.m */; };
+		AB3006CB1852F5FE007A4E29 /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656D185180CB008D239D /* Stop.m */; };
+		AB3006CC1852F600007A4E29 /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656418517D3F008D239D /* Bus.m */; };
+		AB3006CD1852F602007A4E29 /* Announcement.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656718517E7C008D239D /* Announcement.m */; };
+		AB3006CE1852F604007A4E29 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656A18517F04008D239D /* Route.m */; };
+		AB3006CF1852F607007A4E29 /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
+		AB3006D21852F682007A4E29 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3006D11852F682007A4E29 /* DataStore.m */; };
 		AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
 		AB708C9D1852A55B00AC01E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +56,7 @@
 /* Begin PBXFileReference section */
 		40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fare.xcconfig"; path = "Pods/Pods-Fare.xcconfig"; sourceTree = "<group>"; };
 		6EC2387506B84234AFA02686 /* libPods-Fare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35118CBB5F4491D8D64E6BC /* Pods-FareTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FareTest.xcconfig"; path = "Pods/Pods-FareTest.xcconfig"; sourceTree = "<group>"; };
 		AB0D986D185159D40091F276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB0D986F185159D40091F276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB0D9871185159D40091F276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -41,6 +72,21 @@
 		AB0D98CC185166030091F276 /* Arrival.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrival.m; sourceTree = "<group>"; };
 		AB0D98D5185175C30091F276 /* ArrivalStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalStop.h; sourceTree = "<group>"; };
 		AB0D98D6185175C30091F276 /* ArrivalStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalStop.m; sourceTree = "<group>"; };
+		AB30068A1852F457007A4E29 /* NSDictionary+FareAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FareAdditions.h"; sourceTree = "<group>"; };
+		AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FareAdditions.m"; sourceTree = "<group>"; };
+		AB3006911852F4CE007A4E29 /* FareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3006971852F4CE007A4E29 /* FareTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FareTest-Info.plist"; sourceTree = "<group>"; };
+		AB3006991852F4CE007A4E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB30069B1852F4CE007A4E29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB30069D1852F4CE007A4E29 /* FareTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FareTest-Prefix.pch"; sourceTree = "<group>"; };
+		AB30069E1852F4CE007A4E29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB30069F1852F4CE007A4E29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB3006A11852F4CE007A4E29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB3006AF1852F4CE007A4E29 /* FareTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FareTestTests-Info.plist"; sourceTree = "<group>"; };
+		AB3006B11852F4CE007A4E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB3006B31852F4CE007A4E29 /* FareTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FareTestTests.m; sourceTree = "<group>"; };
+		AB3006D01852F682007A4E29 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		AB3006D11852F682007A4E29 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		AB708C74185265C900AC01E5 /* libFare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ABF4656318517D3F008D239D /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
@@ -55,15 +101,28 @@
 		ABF465701851837E008D239D /* TraceRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraceRoute.m; sourceTree = "<group>"; };
 		ABF4657618518809008D239D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABF4657918518843008D239D /* Objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objects.h; sourceTree = "<group>"; };
+		DB9913EE6CB448E695384432 /* libPods-FareTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FareTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AB30068E1852F4CE007A4E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3006931852F4CE007A4E29 /* CoreGraphics.framework in Frameworks */,
+				AB3006941852F4CE007A4E29 /* UIKit.framework in Frameworks */,
+				AB3006921852F4CE007A4E29 /* Foundation.framework in Frameworks */,
+				207CA42ECFDF43788A7F693D /* libPods-FareTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB708C71185265C900AC01E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB708C9D1852A55B00AC01E5 /* CoreLocation.framework in Frameworks */,
 				AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */,
+				194A282DD79B4E0FB3E1C601 /* libPods-Fare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +134,12 @@
 			children = (
 				AB0D98A218515A110091F276 /* Source */,
 				AB0D989C18515A110091F276 /* Resources */,
+				AB3006951852F4CE007A4E29 /* FareTest */,
+				AB3006AD1852F4CE007A4E29 /* FareTestTests */,
 				AB0D986C185159D40091F276 /* Frameworks */,
 				AB0D986B185159D40091F276 /* Products */,
 				40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */,
+				A35118CBB5F4491D8D64E6BC /* Pods-FareTest.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AB708C74185265C900AC01E5 /* libFare.a */,
+				AB3006911852F4CE007A4E29 /* FareTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +161,7 @@
 				AB0D9871185159D40091F276 /* UIKit.framework */,
 				AB0D9886185159D40091F276 /* XCTest.framework */,
 				6EC2387506B84234AFA02686 /* libPods-Fare.a */,
+				DB9913EE6CB448E695384432 /* libPods-FareTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +208,8 @@
 				AB0D98B118515A670091F276 /* UMNetworkingSession.m */,
 				AB0D98BB1851623F0091F276 /* UMResponseSerializer.h */,
 				AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */,
+				AB30068A1852F457007A4E29 /* NSDictionary+FareAdditions.h */,
+				AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */,
 				ABF4657618518809008D239D /* Constants.h */,
 				ABF4657918518843008D239D /* Objects.h */,
 				AB0D98CA185165F80091F276 /* Models */,
@@ -181,16 +247,79 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AB3006951852F4CE007A4E29 /* FareTest */ = {
+			isa = PBXGroup;
+			children = (
+				AB3006D01852F682007A4E29 /* DataStore.h */,
+				AB3006D11852F682007A4E29 /* DataStore.m */,
+				AB30069E1852F4CE007A4E29 /* AppDelegate.h */,
+				AB30069F1852F4CE007A4E29 /* AppDelegate.m */,
+				AB3006A11852F4CE007A4E29 /* Images.xcassets */,
+				AB3006961852F4CE007A4E29 /* Supporting Files */,
+			);
+			path = FareTest;
+			sourceTree = "<group>";
+		};
+		AB3006961852F4CE007A4E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3006971852F4CE007A4E29 /* FareTest-Info.plist */,
+				AB3006981852F4CE007A4E29 /* InfoPlist.strings */,
+				AB30069B1852F4CE007A4E29 /* main.m */,
+				AB30069D1852F4CE007A4E29 /* FareTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3006AD1852F4CE007A4E29 /* FareTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3006B31852F4CE007A4E29 /* FareTestTests.m */,
+				AB3006AE1852F4CE007A4E29 /* Supporting Files */,
+			);
+			path = FareTestTests;
+			sourceTree = "<group>";
+		};
+		AB3006AE1852F4CE007A4E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3006AF1852F4CE007A4E29 /* FareTestTests-Info.plist */,
+				AB3006B01852F4CE007A4E29 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AB3006901852F4CE007A4E29 /* FareTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3006B51852F4CE007A4E29 /* Build configuration list for PBXNativeTarget "FareTest" */;
+			buildPhases = (
+				CDB92D386E4943F787A69BDA /* Check Pods Manifest.lock */,
+				AB30068D1852F4CE007A4E29 /* Sources */,
+				AB30068E1852F4CE007A4E29 /* Frameworks */,
+				AB30068F1852F4CE007A4E29 /* Resources */,
+				4B05EE3AF0324FA4B4E44F2F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FareTest;
+			productName = FareTest;
+			productReference = AB3006911852F4CE007A4E29 /* FareTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AB708C73185265C900AC01E5 /* Fare */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB708C90185265C900AC01E5 /* Build configuration list for PBXNativeTarget "Fare" */;
 			buildPhases = (
+				ED17CA2404C745F390303CB0 /* Check Pods Manifest.lock */,
 				AB708C70185265C900AC01E5 /* Sources */,
 				AB708C71185265C900AC01E5 /* Frameworks */,
 				AB708C72185265C900AC01E5 /* CopyFiles */,
+				792DC6A54B0A46858E5AE962 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,19 +352,144 @@
 			projectRoot = "";
 			targets = (
 				AB708C73185265C900AC01E5 /* Fare */,
+				AB3006901852F4CE007A4E29 /* FareTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AB30068F1852F4CE007A4E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB30069A1852F4CE007A4E29 /* InfoPlist.strings in Resources */,
+				AB3006A21852F4CE007A4E29 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B05EE3AF0324FA4B4E44F2F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FareTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792DC6A54B0A46858E5AE962 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Fare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB92D386E4943F787A69BDA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED17CA2404C745F390303CB0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AB30068D1852F4CE007A4E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3006C71852F5F0007A4E29 /* UMResponseSerializer.m in Sources */,
+				AB3006CA1852F5FC007A4E29 /* ArrivalStop.m in Sources */,
+				AB3006A01852F4CE007A4E29 /* AppDelegate.m in Sources */,
+				AB3006C61852F5E5007A4E29 /* UMNetworkingSession.m in Sources */,
+				AB3006CE1852F604007A4E29 /* Route.m in Sources */,
+				AB3006CF1852F607007A4E29 /* TraceRoute.m in Sources */,
+				AB3006C81852F5F3007A4E29 /* NSDictionary+FareAdditions.m in Sources */,
+				AB3006D21852F682007A4E29 /* DataStore.m in Sources */,
+				AB30069C1852F4CE007A4E29 /* main.m in Sources */,
+				AB3006CC1852F600007A4E29 /* Bus.m in Sources */,
+				AB3006C91852F5FA007A4E29 /* Arrival.m in Sources */,
+				AB3006CD1852F602007A4E29 /* Announcement.m in Sources */,
+				AB3006CB1852F5FE007A4E29 /* Stop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB708C70185265C900AC01E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3006BC1852F5A2007A4E29 /* UMNetworkingSession.m in Sources */,
+				AB3006BD1852F5A2007A4E29 /* UMResponseSerializer.m in Sources */,
+				AB3006BE1852F5A2007A4E29 /* Arrival.m in Sources */,
+				AB3006BF1852F5A2007A4E29 /* ArrivalStop.m in Sources */,
+				AB3006C01852F5A2007A4E29 /* Stop.m in Sources */,
+				AB3006C11852F5A2007A4E29 /* Bus.m in Sources */,
+				AB3006C21852F5A2007A4E29 /* Announcement.m in Sources */,
+				AB3006C31852F5A2007A4E29 /* Route.m in Sources */,
+				AB3006C41852F5A2007A4E29 /* TraceRoute.m in Sources */,
+				AB30068C1852F457007A4E29 /* NSDictionary+FareAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB3006981852F4CE007A4E29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3006991852F4CE007A4E29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB3006B01852F4CE007A4E29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3006B11852F4CE007A4E29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AB0D9894185159D40091F276 /* Debug */ = {
@@ -310,8 +564,43 @@
 			};
 			name = Release;
 		};
+		AB3006B61852F4CE007A4E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35118CBB5F4491D8D64E6BC /* Pods-FareTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FareTest/FareTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FareTest/FareTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB3006B71852F4CE007A4E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35118CBB5F4491D8D64E6BC /* Pods-FareTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FareTest/FareTest-Prefix.pch";
+				INFOPLIST_FILE = "FareTest/FareTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		AB708C91185265C900AC01E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/Fare.dst;
@@ -329,6 +618,7 @@
 		};
 		AB708C92185265C900AC01E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F2D3458C5246389C810834 /* Pods-Fare.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/Fare.dst;
@@ -348,6 +638,15 @@
 			buildConfigurations = (
 				AB0D9894185159D40091F276 /* Debug */,
 				AB0D9895185159D40091F276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3006B51852F4CE007A4E29 /* Build configuration list for PBXNativeTarget "FareTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3006B61852F4CE007A4E29 /* Debug */,
+				AB3006B71852F4CE007A4E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
