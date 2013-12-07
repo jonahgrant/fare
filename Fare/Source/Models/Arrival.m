@@ -81,7 +81,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"topOfLoop" : @"topofloop",
-             @"busRouteColor" : @"buseroutecolor",
+             @"busRouteColor" : @"busroutecolor",
              @"stops" : @"stop"};
 }
 

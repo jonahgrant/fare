@@ -36,7 +36,6 @@
 		AB3006CD1852F602007A4E29 /* Announcement.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656718517E7C008D239D /* Announcement.m */; };
 		AB3006CE1852F604007A4E29 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656A18517F04008D239D /* Route.m */; };
 		AB3006CF1852F607007A4E29 /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
-		AB3006D21852F682007A4E29 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3006D11852F682007A4E29 /* DataStore.m */; };
 		AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
 		AB708C9D1852A55B00AC01E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -85,8 +84,6 @@
 		AB3006AF1852F4CE007A4E29 /* FareTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FareTestTests-Info.plist"; sourceTree = "<group>"; };
 		AB3006B11852F4CE007A4E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB3006B31852F4CE007A4E29 /* FareTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FareTestTests.m; sourceTree = "<group>"; };
-		AB3006D01852F682007A4E29 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
-		AB3006D11852F682007A4E29 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		AB708C74185265C900AC01E5 /* libFare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ABF4656318517D3F008D239D /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
@@ -250,8 +247,6 @@
 		AB3006951852F4CE007A4E29 /* FareTest */ = {
 			isa = PBXGroup;
 			children = (
-				AB3006D01852F682007A4E29 /* DataStore.h */,
-				AB3006D11852F682007A4E29 /* DataStore.m */,
 				AB30069E1852F4CE007A4E29 /* AppDelegate.h */,
 				AB30069F1852F4CE007A4E29 /* AppDelegate.m */,
 				AB3006A11852F4CE007A4E29 /* Images.xcassets */,
@@ -444,7 +439,6 @@
 				AB3006CE1852F604007A4E29 /* Route.m in Sources */,
 				AB3006CF1852F607007A4E29 /* TraceRoute.m in Sources */,
 				AB3006C81852F5F3007A4E29 /* NSDictionary+FareAdditions.m in Sources */,
-				AB3006D21852F682007A4E29 /* DataStore.m in Sources */,
 				AB30069C1852F4CE007A4E29 /* main.m in Sources */,
 				AB3006CC1852F600007A4E29 /* Bus.m in Sources */,
 				AB3006C91852F5FA007A4E29 /* Arrival.m in Sources */,
