@@ -178,12 +178,12 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
     
     NSDictionary *xmlDict = [[XMLDictionaryParser sharedInstance] dictionaryWithData:data];
     
-    if (xmlDict[kError]]) {
+    if (xmlDict[kError]) {
         return nil;
     }
     
-    if ([[xmlDict objectForKey:kXMLName] isEqual:kLivefeed]) {
-        if ([xmlDict objectForKey:kRoute) {
+    if ([[xmlDict objectForKey:kXMLName] isEqual:kLiveFeed]) {
+        if ([xmlDict objectForKey:kRoute]) {
             NSArray *objects = [xmlDict objectForKey:kRoute];
             if (self.inArray) {
                 return [self arrayResponseObjectForXMLObject:objects
