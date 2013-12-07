@@ -7,12 +7,12 @@
 //
 
 #import "Arrival.h"
-#import "Stop.h"
+#import "ArrivalStop.h"
 
 @implementation Arrival
 
 + (NSValueTransformer *)stopsJSONTransformer {
-    NSValueTransformer *dictionaryTransformer = [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:[Stop class]];
+    NSValueTransformer *dictionaryTransformer = [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:[ArrivalStop class]];
 
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSArray *dictionaries) {
         NSMutableArray *models = [NSMutableArray arrayWithCapacity:dictionaries.count];
