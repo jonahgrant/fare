@@ -11,7 +11,7 @@
 @implementation ArrivalStop
 
 - (CLLocationCoordinate2D)coordinate {
-    return CLLocationCoordinate2DMake([self.timeOfArrival doubleValue], [self.timeOfArrival2 doubleValue]);
+    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
 }
 
 - (NSDate *)dateForTimeOfArrival:(NSTimeInterval)timeInterval {
