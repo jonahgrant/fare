@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
+		AB708C9D1852A55B00AC01E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		AB0D98D5185175C30091F276 /* ArrivalStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalStop.h; sourceTree = "<group>"; };
 		AB0D98D6185175C30091F276 /* ArrivalStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalStop.m; sourceTree = "<group>"; };
 		AB708C74185265C900AC01E5 /* libFare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ABF4656318517D3F008D239D /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
 		ABF4656418517D3F008D239D /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
 		ABF4656618517E7C008D239D /* Announcement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Announcement.h; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB708C9D1852A55B00AC01E5 /* CoreLocation.framework in Frameworks */,
 				AB708C75185265C900AC01E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		AB0D986C185159D40091F276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB708C9C1852A55B00AC01E5 /* CoreLocation.framework */,
 				AB0D986D185159D40091F276 /* Foundation.framework */,
 				AB0D986F185159D40091F276 /* CoreGraphics.framework */,
 				AB0D9871185159D40091F276 /* UIKit.framework */,

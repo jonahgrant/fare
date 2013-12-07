@@ -9,6 +9,7 @@
 #import "UMResponseSerializer.h"
 #import "Mantle.h"
 #import "XMLDictionary.h"
+#import "Constants.h"
 
 NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDomain";
 
@@ -96,7 +97,7 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
     NSDictionary *jsonDict = [super responseObjectForResponse:response
                                                          data:data
                                                         error:error];
-    id errorObject = jsonDict[@"error"];
+    id errorObject = jsonDict[kError];
     if (errorObject) {
         NSError *apiError = [self errorForJSONObject:errorObject
                                                error:error];
@@ -106,7 +107,7 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
         return nil;
     }
     
-    id dataObject = jsonDict[@"response"];
+    id dataObject = jsonDict[kResponse];
     if (self.inArray) {
         return [self arrayResponseObjectForJSONObject:dataObject
                                                 error:error];
@@ -177,13 +178,13 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
     
     NSDictionary *xmlDict = [[XMLDictionaryParser sharedInstance] dictionaryWithData:data];
     
-    if (xmlDict[@"error"]) {
+    if (xmlDict[kError]]) {
         return nil;
     }
     
-    if ([[xmlDict objectForKey:@"__name"] isEqual:@"livefeed"]) {
-        if ([xmlDict objectForKey:@"route"]) {
-            NSArray *objects = [xmlDict objectForKey:@"route"];
+    if ([[xmlDict objectForKey:kXMLName] isEqual:kLivefeed]) {
+        if ([xmlDict objectForKey:kRoute) {
+            NSArray *objects = [xmlDict objectForKey:kRoute];
             if (self.inArray) {
                 return [self arrayResponseObjectForXMLObject:objects
                                                        error:error];
@@ -193,8 +194,8 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
             }
         }
         
-        if ([xmlDict objectForKey:@"item"]) {
-            NSArray *objects = [xmlDict objectForKey:@"item"];
+        if ([xmlDict objectForKey:kItem]) {
+            NSArray *objects = [xmlDict objectForKey:kItem];
             if (self.inArray) {
                 return [self arrayResponseObjectForXMLObject:objects
                                                        error:error];
@@ -205,9 +206,9 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
         }
     }
     
-    if ([[xmlDict objectForKey:@"__name"] isEqual:@"histdata"]) {
-        if ([xmlDict objectForKey:@"item"]) {
-            NSArray *objects = [xmlDict objectForKey:@"item"];
+    if ([[xmlDict objectForKey:kXMLName] isEqual:kHistoricalData]) {
+        if ([xmlDict objectForKey:kItem]) {
+            NSArray *objects = [xmlDict objectForKey:kItem];
             if (self.inArray) {
                 return [self arrayResponseObjectForXMLObject:objects
                                                        error:error];

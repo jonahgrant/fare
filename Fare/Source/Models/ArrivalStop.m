@@ -10,6 +10,18 @@
 
 @implementation ArrivalStop
 
+- (CLLocationCoordinate2D)coordinate {
+    return CLLocationCoordinate2DMake([self.timeOfArrival doubleValue], [self.timeOfArrival2 doubleValue]);
+}
+
+- (NSDate *)dateForTimeOfArrival:(NSTimeInterval)timeInterval {
+    return [NSDate dateWithTimeIntervalSinceNow:timeInterval];
+}
+
+- (NSTimer *)timerCountingDownToTimeOfArrival:(NSTimeInterval)timeInterval {
+    return [NSTimer scheduledTimerWithTimeInterval:timeInterval invocation:nil repeats:NO];
+}
+
 #pragma mark MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {

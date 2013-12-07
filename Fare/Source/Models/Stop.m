@@ -10,6 +10,10 @@
 
 @implementation Stop
 
+- (CLLocationCoordinate2D)coordinate {
+    return CLLocationCoordinate2DMake([self.timeOfArrival doubleValue], [self.timeOfArrival2 doubleValue]);
+}
+
 #pragma mark MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
