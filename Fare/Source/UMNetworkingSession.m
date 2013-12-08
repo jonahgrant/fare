@@ -48,7 +48,7 @@
             parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
-     setResponseSerializer:[Bus um_xmlArrayResponseSerializer]];
+     setResponseSerializer:[Bus um_jsonArrayResponseSerializer]];
 }
 
 - (void)fetchAnnouncementsWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
