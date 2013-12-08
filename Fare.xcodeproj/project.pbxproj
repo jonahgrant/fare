@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		194A282DD79B4E0FB3E1C601 /* libPods-Fare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC2387506B84234AFA02686 /* libPods-Fare.a */; };
 		207CA42ECFDF43788A7F693D /* libPods-FareTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9913EE6CB448E695384432 /* libPods-FareTest.a */; };
-		AB30068C1852F457007A4E29 /* NSDictionary+FareAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */; };
 		AB3006921852F4CE007A4E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986D185159D40091F276 /* Foundation.framework */; };
 		AB3006931852F4CE007A4E29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D986F185159D40091F276 /* CoreGraphics.framework */; };
 		AB3006941852F4CE007A4E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D9871185159D40091F276 /* UIKit.framework */; };
@@ -28,7 +27,6 @@
 		AB3006C41852F5A2007A4E29 /* TraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF465701851837E008D239D /* TraceRoute.m */; };
 		AB3006C61852F5E5007A4E29 /* UMNetworkingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98B118515A670091F276 /* UMNetworkingSession.m */; };
 		AB3006C71852F5F0007A4E29 /* UMResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */; };
-		AB3006C81852F5F3007A4E29 /* NSDictionary+FareAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */; };
 		AB3006C91852F5FA007A4E29 /* Arrival.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98CC185166030091F276 /* Arrival.m */; };
 		AB3006CA1852F5FC007A4E29 /* ArrivalStop.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98D6185175C30091F276 /* ArrivalStop.m */; };
 		AB3006CB1852F5FE007A4E29 /* Stop.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4656D185180CB008D239D /* Stop.m */; };
@@ -71,8 +69,6 @@
 		AB0D98CC185166030091F276 /* Arrival.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrival.m; sourceTree = "<group>"; };
 		AB0D98D5185175C30091F276 /* ArrivalStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalStop.h; sourceTree = "<group>"; };
 		AB0D98D6185175C30091F276 /* ArrivalStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalStop.m; sourceTree = "<group>"; };
-		AB30068A1852F457007A4E29 /* NSDictionary+FareAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FareAdditions.h"; sourceTree = "<group>"; };
-		AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FareAdditions.m"; sourceTree = "<group>"; };
 		AB3006911852F4CE007A4E29 /* FareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3006971852F4CE007A4E29 /* FareTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FareTest-Info.plist"; sourceTree = "<group>"; };
 		AB3006991852F4CE007A4E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -205,8 +201,6 @@
 				AB0D98B118515A670091F276 /* UMNetworkingSession.m */,
 				AB0D98BB1851623F0091F276 /* UMResponseSerializer.h */,
 				AB0D98BC1851623F0091F276 /* UMResponseSerializer.m */,
-				AB30068A1852F457007A4E29 /* NSDictionary+FareAdditions.h */,
-				AB30068B1852F457007A4E29 /* NSDictionary+FareAdditions.m */,
 				ABF4657618518809008D239D /* Constants.h */,
 				ABF4657918518843008D239D /* Objects.h */,
 				AB0D98CA185165F80091F276 /* Models */,
@@ -438,7 +432,6 @@
 				AB3006C61852F5E5007A4E29 /* UMNetworkingSession.m in Sources */,
 				AB3006CE1852F604007A4E29 /* Route.m in Sources */,
 				AB3006CF1852F607007A4E29 /* TraceRoute.m in Sources */,
-				AB3006C81852F5F3007A4E29 /* NSDictionary+FareAdditions.m in Sources */,
 				AB30069C1852F4CE007A4E29 /* main.m in Sources */,
 				AB3006CC1852F600007A4E29 /* Bus.m in Sources */,
 				AB3006C91852F5FA007A4E29 /* Arrival.m in Sources */,
@@ -460,7 +453,6 @@
 				AB3006C21852F5A2007A4E29 /* Announcement.m in Sources */,
 				AB3006C31852F5A2007A4E29 /* Route.m in Sources */,
 				AB3006C41852F5A2007A4E29 /* TraceRoute.m in Sources */,
-				AB30068C1852F457007A4E29 /* NSDictionary+FareAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
