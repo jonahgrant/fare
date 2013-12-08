@@ -55,6 +55,8 @@ serializer:(AFHTTPResponseSerializer *)serializer {
                    success:^(AFHTTPRequestOperation *operation, id responseObject) {
                        success(operation, responseObject);
                    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                       NSLog(@"failed, trying again");
+                       
                        _operation = operation;
                        _error = error;
                        [self GET:getEndpoint
