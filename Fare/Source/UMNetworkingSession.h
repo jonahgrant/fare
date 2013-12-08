@@ -14,7 +14,7 @@ typedef void (^UMErrorBlock)(NSError *error);
 
 @interface UMNetworkingSession : NSObject
 
-@property (nonatomic) NSUInteger *retryCount;
+@property (nonatomic) NSUInteger retryCount;
 
 /**
  Requests an array of operating bus routes with their arrival times.
