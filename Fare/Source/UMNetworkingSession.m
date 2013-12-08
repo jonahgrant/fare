@@ -35,12 +35,44 @@
     return [kUMRootURL stringByAppendingString:path];
 }
 
+- (void)GET:(NSString *)getEndpoint
+ parameters:(NSDictionary *)parameters
+    success:(void (^)(AFHTTPRequestOperation *, id))success
+    failure:(void (^)(AFHTTPRequestOperation *, id))failure
+ retryCount:(NSUInteger)retry
+responseSerializer:(AFHTTPResponseSerializer *)serializer {
+    
+    if (retry <= 0) {
+        if (failure) {
+            // fail out
+            //failure(error);
+        }
+    } else {
+        NSLog(@"retrying");
+        
+        [[self.manager GET:getEndpoint
+                parameters:parameters
+                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                       success(operation, responseObject);
+                   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                       [self GET:getEndpoint
+                      parameters:parameters
+                         success:success
+                         failure:failure
+                      retryCount:retry - 1
+              responseSerializer:serializer];
+                   }] setResponseSerializer:serializer];
+    }
+    
+}
+
 - (void)fetchArrivalsWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchArrivals]
-           parameters:nil
-              success:HandlerBlock(successBlock)
-               failure:HandlerBlock(errorBlock)]
-     setResponseSerializer:[Arrival um_xmlArrayResponseSerializer]];
+    [self GET:[self rootURLWithPath:kUMAPIFetchArrivals]
+   parameters:nil
+      success:HandlerBlock(successBlock)
+      failure:HandlerBlock(errorBlock)
+   retryCount:10
+responseSerializer:[Arrival um_xmlArrayResponseSerializer]];
 }
 
 - (void)fetchBusesWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
