@@ -14,8 +14,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"routeName" : @"route",
-             @"routeID" : @"route",
-             @"busRouteColor" : @"busroutecolor"};
+             @"routeID" : @"route"};
 }
 
 @end
