@@ -1,5 +1,5 @@
 # Fare 
-The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around the [API](https://github.com/magic-bus/api-documentation/).
+The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around the API
 
 ### Dependencies
 
