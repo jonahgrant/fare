@@ -99,20 +99,19 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
                                                         error:error];
     id errorObject = jsonDict[kError];
     if (errorObject) {
-        NSError *apiError = [self errorForJSONObject:errorObject
-                                               error:error];
+        NSError *apiError = [self errorForJSONObject:errorObject error:error];
         if (error && apiError) {
             *error = apiError;
         }
+        
         return nil;
     }
     
-    id dataObject = jsonDict[kResponse];
     if (self.inArray) {
-        return [self arrayResponseObjectForJSONObject:dataObject
+        return [self arrayResponseObjectForJSONObject:jsonDict[kResponse]
                                                 error:error];
     } else {
-        return [self nonArrayResponseObjectForJSONObject:dataObject
+        return [self nonArrayResponseObjectForJSONObject:jsonDict[kResponse]
                                                    error:error];
     }
 }
@@ -141,6 +140,7 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
                 return nil;
             }
         }
+        
         return responseObjects;
     } else {
         if (error) {
@@ -148,6 +148,7 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
                                          code:NSURLErrorBadServerResponse
                                      userInfo:nil];
         }
+        
         return nil;
     }
 }
@@ -163,6 +164,7 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
                                          code:NSURLErrorBadServerResponse
                                      userInfo:nil];
         }
+        
         return nil;
     }
     
@@ -171,51 +173,41 @@ NSString * const UMResponseSerializerErrorDomain = @"UMResponseSerializerErrorDo
 
 #pragma mark AFURLResponseSerialization
 
-- (id)responseObjectForResponse:(NSURLResponse *)response
-                           data:(NSData *)data
-                          error:(NSError *__autoreleasing *)error
-{
-    
+- (id)responseObjectForResponse:(NSURLResponse *__autoreleasing)response
+                           data:(NSData *__autoreleasing)data
+                          error:(NSError *__autoreleasing *)error {
     NSDictionary *xmlDict = [[XMLDictionaryParser sharedInstance] dictionaryWithData:data];
     
     if (xmlDict[kError]) {
         return nil;
     }
-    
-    if ([[xmlDict objectForKey:kXMLName] isEqual:kLiveFeed]) {
-        if ([xmlDict objectForKey:kRoute]) {
-            NSArray *objects = [xmlDict objectForKey:kRoute];
+
+    if ([xmlDict[kXMLName] isEqual:kLiveFeed]) {
+        if (xmlDict[kRoute]) {
             if (self.inArray) {
-                return [self arrayResponseObjectForXMLObject:objects
+                return [self arrayResponseObjectForXMLObject:xmlDict[kRoute]
                                                        error:error];
             } else {
-                return [self nonArrayResponseObjectForXMLObject:objects
+                return [self nonArrayResponseObjectForXMLObject:xmlDict[kRoute]
                                                           error:error];
             }
         }
         
-        if ([xmlDict objectForKey:kItem]) {
-            NSArray *objects = [xmlDict objectForKey:kItem];
+        if (xmlDict[kItem]) {
             if (self.inArray) {
-                return [self arrayResponseObjectForXMLObject:objects
+                return [self arrayResponseObjectForXMLObject:xmlDict[kItem]
                                                        error:error];
-            } else {
-                return [self nonArrayResponseObjectForXMLObject:objects
-                                                          error:error];
             }
         }
     }
     
-    if ([[xmlDict objectForKey:kXMLName] isEqual:kHistoricalData]) {
-        if ([xmlDict objectForKey:kItem]) {
-            NSArray *objects = [xmlDict objectForKey:kItem];
-            if (self.inArray) {
-                return [self arrayResponseObjectForXMLObject:objects
-                                                       error:error];
-            } else {
-                return [self nonArrayResponseObjectForXMLObject:objects
-                                                          error:error];
-            }
+    if ([xmlDict[kXMLName] isEqual:kHistoricalData] && xmlDict[kItem]) {
+        if (self.inArray) {
+            return [self arrayResponseObjectForXMLObject:xmlDict[kItem]
+                                                   error:error];
+        } else {
+            return [self nonArrayResponseObjectForXMLObject:xmlDict[kItem]
+                                                      error:error];
         }
     }
     
