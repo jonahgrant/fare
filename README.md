@@ -105,6 +105,7 @@ If I want to log the latitude and longitudes of each bus currently operating, I 
 
 ##### Arrival
 Returned in an array as a `-fetchArrivalsWithSuccessBlock:errorBlock:` response
+
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
 |`NSString`|name|name of the route that is arriving|
