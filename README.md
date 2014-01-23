@@ -47,6 +47,21 @@ Where you want to use Fare, import the header file.
 
 **<code>GET</code>** `-fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:`
 
+## Usage
+
+If I want to log the latitude and longitudes of each bus currently operating, I would import `UMNetworkingSession.h` and `Bus.h` into my implementation.
+
+````obj-c
+    UMNetworkingSession *networkingSession = [[UMNetworkingSession alloc] init];
+    [networkingSession fetchBusesWithSuccessBlock:^(NSArray *buses) {
+        for (Bus *bus in buses) {
+            NSLog(@"lat/lng: %@/%@", bus.latitude, bus.longitude);
+        }
+    } errorBlock:^(NSError *error) {
+        NSLog(@"There was an error fetching buses: %@", error.localizedDescription);
+    }];
+````
+
 ## Objects
 
 ##### Bus
@@ -59,6 +74,7 @@ Where you want to use Fare, import the header file.
 |`NSString`|routeID|the route ID that the bus is operating on|
 |`NSString`|routeName|the name of the route that the bus is operating on|
 |`NSString`|busRouteColor|a hex color representing route color|
+
 ##### Stop
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
@@ -69,6 +85,7 @@ Where you want to use Fare, import the header file.
 |`NSString`|latitude|the latitude that the stop resides on|
 |`NSString`|longitude|the longitude that the stop resides on|
 |`NSString`|heading|the heading that the stop faces|
+
 ##### Route
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
@@ -78,13 +95,16 @@ Where you want to use Fare, import the header file.
 |`NSString`|topOfLoopStopID|ID of the stop that represents the route ending|
 |`BOOL`|isActive|boolean representing if the route is operating|
 |`NSArray`|stops|array of `Stop` objects that the route frequents|
+
 ##### Announcement
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
 |`NSString`|title|title of the announcement|
 |`NSString`|text|content of the announcement|
 |`NSString`|type|type of announcement|
+
 ##### Arrival
+Returned in an array as a `-fetchArrivalsWithSuccessBlock:errorBlock:` response
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
 |`NSString`|name|name of the route that is arriving|
@@ -92,6 +112,7 @@ Where you want to use Fare, import the header file.
 |`NSString`|topOfLoop|id of stop that represents route ending|
 |`NSString`|busRouteColor|hex color representing the arriving route|
 |`NSArray`|stop|array of `ArrivalStop` objects that represents stops that the arriving route frequents|
+
 ##### ArrivalStop
 | Property | Name    | Purpose   |
 | -------- | --------| --------- |
@@ -106,28 +127,12 @@ Where you want to use Fare, import the header file.
 |`NSTimeInterval`|timeOfArrival|seconds until the bus arrives at this stop|
 |`NSTimeInterval`|timeOfArrival2|seconds until the second bus arrives at this stop|
 		
-## Example
-
-If I want to log the latitude and longitudes of each bus currently operating, I would import `UMNetworkingSession.h` and `Bus.h` into my header file.
-
-In my `-viewDidLoad`, I would add:
-
-````objc
-    UMNetworkingSession *networkingSession = [[UMNetworkingSession alloc] init];
-    [networkingSession fetchBusesWithSuccessBlock:^(NSArray *buses) {
-        for (Bus *bus in buses) {
-            NSLog(@"lat/lng: %@/%@", bus.latitude, bus.longitude);
-        }
-    } errorBlock:^(NSError *error) {
-        NSLog(@"Error fetching buses: %@", error.localizedDescription);
-    }];
-````
 
 ## License
-
+````
 The MIT License (MIT)
 
-Copyright (c) 2013 Jonah Grant.
+Copyright (c) 2014 Jonah Grant.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -146,3 +151,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+````
