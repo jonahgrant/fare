@@ -36,10 +36,15 @@ Where you want to use Fare, import the header file.
 ## Methods
 
 **<code>GET</code>** `-fetchArrivalsWithSuccessBlock:errorBlock:`
+
 **<code>GET</code>** `-fetchBusesWithSuccessBlock:errorBlock:`
+
 **<code>GET</code>** `-fetchStopsWithSuccessBlock:errorBlock:`
+
 **<code>GET</code>** `-fetchRoutesWithSuccessBlock:errorBlock:`
+
 **<code>GET</code>** `-fetchAnnouncementsWithSuccessBlock:errorBlock:`
+
 **<code>GET</code>** `-fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:`
 
 ## Objects
