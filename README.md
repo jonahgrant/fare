@@ -1,12 +1,16 @@
 # Fare 
 The University of Michigan has an awesome [live bus tracking system](http://mbus.pts.umich.edu/) for students.  This is an Objective-C wrapper around the API
-
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c90b796cb40612af459840b74157e8a8 "githalytics.com")](http://githalytics.com/jonahgrant/fare)
 ### Dependencies
 
-Fare runs with the help of a couple awesome projects.  [AFNetworking](https://github.com/AFNetworking/AFNetworking) runs asynchronous network requests faster than Usain Bolt behind chased by a Ferrari. [Mantle](https://github.com/github/Mantle) helps the project turn "abc" into "A" "B" and "C" which sounds pretty dumb at first, but trust me: it's awesome.  [XMLDictionary](https://github.com/nicklockwood/XMLDictionary) converts a long-lost cryptic language once thought to be extinct into something that's actually usable.  And lastly, [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) ties everything all together by merging together values throughout the project allowing value and property updates so silky smooth that they would make the founders of I Can't Believe It's Not Butter! jealous.
+Fare runs with the help of a couple awesome projects.  
+
+- [AFNetworking](https://github.com/AFNetworking/AFNetworking) 
+- [Mantle](https://github.com/github/Mantle) 
+- [XMLDictionary](https://github.com/nicklockwood/XMLDictionary)
+- [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
 
 ### Installation with CocoaPods
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c90b796cb40612af459840b74157e8a8 "githalytics.com")](http://githalytics.com/jonahgrant/fare)
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like Fare in your projects.
 
 If you don't already have CocoaPods, install it.
@@ -25,18 +29,18 @@ pod 'Fare', '~> 1.0.2'
 
 Where you want to use Fare, import the header file.
 
-````objc
+````obj-c
 #import "UMNetworkingSession.h"
 ````
 
 ## Methods
 
-- **<code>GET</code> `-fetchArrivalsWithSuccessBlock:errorBlock:`**
-- **<code>GET</code> `-fetchBusesWithSuccessBlock:errorBlock:`**
-- **<code>GET</code> `-fetchStopsWithSuccessBlock:errorBlock:`**
-- **<code>GET</code> `-fetchRoutesWithSuccessBlock:errorBlock:`**
-- **<code>GET</code> `-fetchAnnouncementsWithSuccessBlock:errorBlock:`**
-- **<code>GET</code> `-fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:`**
+**<code>GET</code>** `-fetchArrivalsWithSuccessBlock:errorBlock:`
+**<code>GET</code>** `-fetchBusesWithSuccessBlock:errorBlock:`
+**<code>GET</code>** `-fetchStopsWithSuccessBlock:errorBlock:`
+**<code>GET</code>** `-fetchRoutesWithSuccessBlock:errorBlock:`
+**<code>GET</code>** `-fetchAnnouncementsWithSuccessBlock:errorBlock:`
+**<code>GET</code>** `-fetchTraceRouteForRouteID:withSuccessBlock:errorBlock:`
 
 ## Objects
 
