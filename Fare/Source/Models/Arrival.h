@@ -43,12 +43,12 @@
 @property (nonatomic, copy) NSString *topOfLoop;
 
 /**
- Returns the route's designated color
+ Returns the hex representation route's designated color
  */
 @property (nonatomic, copy) NSString *busRouteColor;
 
 /**
- Returns an NSArray of ArrivalStop objects
+ Returns an NSArray of ArrivalStop objects that the route is servicing
  */
 @property (strong, nonatomic) NSArray *stops;
 

@@ -63,7 +63,7 @@
 @property (nonatomic, copy) NSString *longitude;
 
 /**
- Returns the heading that the stop is directing
+ Returns the heading that the stop is directing towards
  */
 @property (nonatomic, copy) NSString *heading;
 

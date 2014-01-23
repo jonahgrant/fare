@@ -64,70 +64,79 @@ If I want to log the latitude and longitudes of each bus currently operating, I 
 
 ## Objects
 
-##### Bus
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-| `NSString` | heading | heading of bus |
-| `NSString` | id | the bus ID|
-| `NSString`|latitude|current latitude of bus|
-|`NSString`|longitude|current longitude of bus|
-|`NSString`|routeID|the route ID that the bus is operating on|
-|`NSString`|routeName|the name of the route that the bus is operating on|
-|`NSString`|busRouteColor|a hex color representing route color|
+### Bus
+| Property   |	Name    		|	Purpose   |
+| --------   |	--------		|	--------- |
+| `NSString` |	heading 		|	heading of bus |
+| `NSString` |	id				| 	the bus ID|
+| `NSString` |	latitude		|	current latitude of bus|
+| `NSString` |	longitude		|	current longitude of bus|
+| `NSString` |	routeID			|	the route ID that the bus is operating on|
+| `NSString` |	routeName		|	the name of the route that the bus is operating on|
+| `NSString` |	busRouteColor	|	a hex color representing route color|
 
-##### Stop
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-|`NSString`|id|id of the stop|
-|`NSString`|uniqueName|a stop's unique name|
-|`NSString`|humanName|a stop's human name|
-|`NSString`|additionalName|an extra name if a stop needs it|
-|`NSString`|latitude|the latitude that the stop resides on|
-|`NSString`|longitude|the longitude that the stop resides on|
-|`NSString`|heading|the heading that the stop faces|
+### Stop
+| Property 	|	Name    		|	Purpose   												|
+| -------- 	|	--------		|	--------- 												|
+|`NSString`	|	id				|	Returns the stop's ID									|
+|`NSString`	|	uniqueName		|	Returns the stop's unique name							|
+|`NSString`	|	humanName		|	Returns the stop's human name							|
+|`NSString`	|	additionalName	|	Returns the stop's additional name, if it has one		|
+|`NSString`	|	latitude		|	Returns the latitude that the stop resides on			|
+|`NSString`	|	longitude		|	Returns the longitude that the stop resides on			|
+|`NSString`	|	heading			|	Returns the heading that the stop is directing towards	|
 
-##### Route
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-|`NSString`|id|the route's ID|
-|`NSString`|name|the name of the route|
-|`NSString`|color|a hex color representing the route|
-|`NSString`|topOfLoopStopID|ID of the stop that represents the route ending|
-|`BOOL`|isActive|boolean representing if the route is operating|
-|`NSArray`|stops|array of `Stop` objects that the route frequents|
+`-coordinate` will return a `CLLocationCoordinate2D` representation of the stop's location
 
-##### Announcement
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-|`NSString`|title|title of the announcement|
-|`NSString`|text|content of the announcement|
-|`NSString`|type|type of announcement|
+### Route
+| Property 	|	Name   			|	Purpose   											|
+| -------- 	|	--------		|	--------- 											|
+|`NSString`	|	id				|	the route's ID										|
+|`NSString`	|	name			|	the name of the route								|
+|`NSString`	|	color			|	a hex color representing the route					|
+|`NSString`	|	topOfLoopStopID	|	ID of the stop that represents the route ending		|
+|`BOOL`		|	isActive		|	boolean representing if the route is operating		|
+|`NSArray`	|	stops			|	array of `Stop` objects that the route frequents	|
 
-##### Arrival
-Returned in an array as a `-fetchArrivalsWithSuccessBlock:errorBlock:` response
+### Announcement
+Returned in an array as a `-fetchAnnouncementsWithSuccessBlock:errorBlock:` response.  Each object represents an active announcement.
 
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-|`NSString`|name|name of the route that is arriving|
-|`NSString`|id|id of the arriving route|
-|`NSString`|topOfLoop|id of stop that represents route ending|
-|`NSString`|busRouteColor|hex color representing the arriving route|
-|`NSArray`|stop|array of `ArrivalStop` objects that represents stops that the arriving route frequents|
+| Property |	Name    |	Purpose   						|
+| -------- |	------- |	--------- 						|
+|`NSString`|	title	|	title of the announcement		|
+|`NSString`|	text	|	content of the announcement		|
+|`NSString`|	type	|	type of announcement			|
 
-##### ArrivalStop
-| Property | Name    | Purpose   |
-| -------- | --------| --------- |
-|`NSString`|id1|first id|
-|`NSString`|id2|second id|
-|`NSString`|name|name of stop|
-|`NSString`|name2|secondary name of stop|
-|`NSString`|name3|third name of stop|
-|`NSString`|latitude|latitude that the stop resides on|
-|`NSString`|longitude|longitude that the stop resides on|
-|`NSString`|heading|heading that the stop faces|
-|`NSTimeInterval`|timeOfArrival|seconds until the bus arrives at this stop|
-|`NSTimeInterval`|timeOfArrival2|seconds until the second bus arrives at this stop|
+### Arrival
+Returned in an array as a `-fetchArrivalsWithSuccessBlock:errorBlock:` response.  Each object represents a route that is being serviced.
+
+| Property 	| 	Name    		|	 Purpose 																|   
+| -------- 	|	 --------		|	 --------- 																|
+|`NSString`	|	name			|	Returns the route name													|
+|`NSString`	|	id				|	Returns the id of the route												|
+|`NSString`	|	topOfLoop		|	Returns the id of the stop that the route "repeats" on					|
+|`NSString`	|	busRouteColor	|	Returns the hex representation route's designated color					|
+|`NSArray`	|	stops			|	Returns an NSArray of ArrivalStop objects that the route is servicing	|
+
+`-stopClosestToCoordinate:` will return the geographically closest `ArrivalStop` object in `stops` to a passed `CLLocationCoordinate2D`
+
+### ArrivalStop
+| Property 			|	 Name    		|	Purpose   														|
+| -------- 			| 	--------		|	--------- 														|
+|`NSString`			|	id1				|	The stop has two different IDs, this returns the first one 		|
+|`NSString`			|	id2				|	The stop has two different IDs, this returns the second one		|
+|`NSString`			|	name			|	The stop has three different names, this returns the first one	|
+|`NSString`			|	name2			|	The stop has three different names, this returns the second one	|
+|`NSString`			|	name3			|	The stop has three different names, this returns the third one	|
+|`NSString`			|	latitude		|	Returns the latitude that the stop resides on					|
+|`NSString`			|	longitude		|	Returns the longitude that the stop resides on					|
+|`NSString`			|	heading			|	Returns the heading that the stop is directing towards			|
+|`NSTimeInterval`	|	timeOfArrival	|	Returns the number of seconds until the first bus arrives		|
+|`NSTimeInterval`	|	timeOfArrival2	|	Returns the number of seconds until the second bus arrives		|
 		
+`-coordinate` will return a `CLLocationCoordinate2D` representation of the stop's location
+`-dateForTimeOfArrival:` will return a `NSDate` representation of when a passed `NSTimeInterval` will occur
+`-timerCountingDownToTimeOfArrival:` will return an `NSTimer` set to execute once a passed `NSTimeInterval` has passed
 
 ## License
 ````
