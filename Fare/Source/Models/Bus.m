@@ -10,11 +10,22 @@
 
 @implementation Bus
 
-#pragma mark MTLJSONSerializing
+#pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"routeName" : @"route",
              @"routeID" : @"route"};
+}
+
+#pragma mark - NSObjet
+
+- (NSString *)debugDescription {
+    return [NSString stringWithFormat:@"Heading: %@\nID: %@\nLatitude: %@\nLongitude: %@\nRoute ID: %@",
+            self.heading,
+            self.id,
+            self.latitude,
+            self.longitude,
+            self.routeID];
 }
 
 @end

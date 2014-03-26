@@ -10,10 +10,16 @@
 
 @implementation Announcement
 
-#pragma mark MTLJSONSerializing
+#pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{};
+}
+
+#pragma mark - NSObject
+
+- (NSString *)debugDescription {
+    return [NSString stringWithFormat:@"Title: %@\nText: %@\nType: %@", self.title, self.text, self.type];
 }
 
 @end

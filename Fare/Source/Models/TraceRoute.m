@@ -10,10 +10,16 @@
 
 @implementation TraceRoute
 
-#pragma mark MTLJSONSerializing
+#pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{};
+}
+
+#pragma mark - NSObject
+
+- (NSString *)debugDescription {
+    return [NSString stringWithFormat:@"Sequence number: %@\nLatitude: %@\nLongitude: %@", self.sequenceNumber, self.latitude, self.longitude];
 }
 
 @end

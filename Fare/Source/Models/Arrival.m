@@ -77,12 +77,18 @@
     return sortedStops.firstObject;
 }
 
-#pragma mark MTLJSONSerializing
+#pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"topOfLoop" : @"topofloop",
              @"busRouteColor" : @"busroutecolor",
              @"stops" : @"stop"};
+}
+
+#pragma mark - NSObjet
+
+- (NSString *)debugDescription {
+    return [NSString stringWithFormat:@"Name: %@\nID: %@\ntopOfLoop: %@\nRoute color: %@\nStops: %@", self.name, self.id, self.topOfLoop, self.busRouteColor, self.stops];
 }
 
 @end
