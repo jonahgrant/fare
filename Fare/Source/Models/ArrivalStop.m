@@ -29,11 +29,10 @@
              @"timeOfArrival2" : @"toa2"};
 }
 
-
 #pragma mark - NSObjet
 
 - (NSString *)debugDescription {
-    return [NSString stringWithFormat:@"ID 1: %@\nID 2: %@\nName: %@\nName 2: %@\nName 3: %@\nLatitude: %@\nLongitude: %@\nHeading: %@\nTime of arrival 1: %@\nTime of arrival 2: %@",
+    return [NSString stringWithFormat:@"ID 1: %@\nID 2: %@\nName: %@\nName 2: %@\nName 3: %@\nLatitude: %@\nLongitude: %@\nHeading: %@\nTime of arrival 1: %f\nTime of arrival 2: %f",
             self.id1,
             self.id2,
             self.name,
