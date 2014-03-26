@@ -7,13 +7,24 @@
 //
 
 #import "Route.h"
+#import "Fare+UIColor.h"
 
 @implementation Route
+
+#pragma mark - NSValueTransformer
+
++ (NSValueTransformer *)colorJSONTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *color) {
+        return [UIColor colorFromHexString:color];
+    } reverseBlock:^id(UIColor *color) {
+        return [UIColor hexStringFromUIColor:color];
+    }];
+}
 
 #pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{@"isActive" : @"is_active",
+    return @{@"active" : @"is_active",
              @"topOfLoopStopID" : @"top_of_loop_stop_id"};
 }
 

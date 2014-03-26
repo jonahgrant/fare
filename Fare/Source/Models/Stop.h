@@ -14,37 +14,37 @@
 /**
  Returns the stop's ID
  */
-@property (nonatomic, copy) NSString *id;
+@property (nonatomic, copy, readonly) NSString *id;
 
 /**
  Returns the stop's unique name
  */
-@property (nonatomic, copy) NSString *uniqueName;
+@property (nonatomic, copy, readonly) NSString *uniqueName;
 
 /**
  Returns the stop's human name
  */
-@property (nonatomic, copy) NSString *humanName;
+@property (nonatomic, copy, readonly) NSString *humanName;
 
 /**
  Returns the stop's additional name, if it has one
  */
-@property (nonatomic, copy) NSString *additionalName;
+@property (nonatomic, copy, readonly) NSString *additionalName;
 
 /**
  Returns the latitude that the stop resides on
  */
-@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, readonly) CLLocationDegrees latitude;
 
 /**
  Returns the longitude that the stop resides on
  */
-@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, readonly) CLLocationDegrees longitude;
 
 /**
  Returns the heading that the stop is directing towards
  */
-@property (nonatomic, copy) NSString *heading;
+@property (nonatomic, copy, readonly) NSString *heading;
 
 /**
  Returns a CLLocationCoordinate2D containing the stop's latitude and longitude.

@@ -10,11 +10,11 @@
 
 @interface Route : MTLModel <MTLJSONSerializing>
 
-@property (strong, nonatomic) NSString *id;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *color;
-@property (nonatomic, copy) NSString *topOfLoopStopID;
-@property (nonatomic) BOOL isActive;
-@property (strong, nonatomic) NSArray *stops;
+@property (nonatomic, copy, readonly) NSString *id;
+@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy, readonly) UIColor *color;
+@property (nonatomic, copy, readonly) NSString *topOfLoopStopID;
+@property (nonatomic, readonly, getter = isActive) BOOL active;
+@property (nonatomic, strong, readonly) NSArray *stops;
     
 @end

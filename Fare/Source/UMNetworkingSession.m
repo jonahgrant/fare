@@ -36,42 +36,48 @@
 }
 
 - (void)fetchArrivalsWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchArrivals] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchArrivals]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[Arrival um_xmlArrayResponseSerializer]];
 }
 
 - (void)fetchBusesWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchBuses] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchBuses]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[Bus um_jsonArrayResponseSerializer]];
 }
 
 - (void)fetchAnnouncementsWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchAnnouncements] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchAnnouncements]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[Announcement um_jsonArrayResponseSerializer]];
 }
 
 - (void)fetchRoutesWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchRoutes] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchRoutes]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[Route um_jsonArrayResponseSerializer]];
 }
 
 - (void)fetchStopsWithSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchStops] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:kUMAPIFetchStops]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[Stop um_jsonArrayResponseSerializer]];
 }
 
 - (void)fetchTraceRouteForRouteID:(NSString *)routeID withSuccessBlock:(UMArrayBlock)successBlock errorBlock:(UMErrorBlock)errorBlock {
-    [[self.manager GET:[self rootURLWithPath:[NSString stringWithFormat:kUMAPIFetchTraceRoute, routeID]] parameters:nil
+    [[self.manager GET:[self rootURLWithPath:[NSString stringWithFormat:kUMAPIFetchTraceRoute, routeID]]
+            parameters:nil
                success:HandlerBlock(successBlock)
                failure:HandlerBlock(errorBlock)]
      setResponseSerializer:[TraceRoute um_xmlArrayResponseSerializer]];

@@ -7,8 +7,19 @@
 //
 
 #import "Announcement.h"
+#import "Fare+UIColor.h"
 
 @implementation Announcement
+
+#pragma mark - NSValueTransformer
+
++ (NSValueTransformer *)colorJSONTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *color) {
+        return [UIColor colorFromHexString:color];
+    } reverseBlock:^id(UIColor *color) {
+        return [UIColor hexStringFromUIColor:color];
+    }];
+}
 
 #pragma mark - MTLJSONSerializing
 
@@ -19,7 +30,7 @@
 #pragma mark - NSObject
 
 - (NSString *)debugDescription {
-    return [NSString stringWithFormat:@"Title: %@\nText: %@\nType: %@", self.title, self.text, self.type];
+    return [NSString stringWithFormat:@"Title: %@\nText: %@\nType: %@\nColor: %@", self.title, self.text, self.type, self.color];
 }
 
 @end

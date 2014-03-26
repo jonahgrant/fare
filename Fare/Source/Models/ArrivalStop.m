@@ -11,15 +11,7 @@
 @implementation ArrivalStop
 
 - (CLLocationCoordinate2D)coordinate {
-    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
-}
-
-- (NSDate *)dateForTimeOfArrival:(NSTimeInterval)timeInterval {
-    return [NSDate dateWithTimeIntervalSinceNow:timeInterval];
-}
-
-- (NSTimer *)timerCountingDownToTimeOfArrival:(NSTimeInterval)timeInterval {
-    return [NSTimer scheduledTimerWithTimeInterval:timeInterval invocation:nil repeats:NO];
+    return CLLocationCoordinate2DMake(self.latitude, self.longitude);
 }
 
 #pragma mark - MTLJSONSerializing

@@ -11,7 +11,7 @@
 @implementation Stop
 
 - (CLLocationCoordinate2D)coordinate {
-    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
+    return CLLocationCoordinate2DMake(self.latitude, self.longitude);
 }
 
 #pragma mark - MTLJSONSerializing
