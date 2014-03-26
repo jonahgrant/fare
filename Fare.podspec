@@ -9,11 +9,10 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Jonah Grant" => "jonah@jonahgrant.com" }
-  s.source       = { :git => "https://github.com/jonahgrant/fare.git", :tag => "1.0.3" }
-  s.platform     = :ios, '6.0'
-  s.source_files  = 'Fare/Source/**/*.{h,m}'
+  s.source       = { :git => "https://github.com/jonahgrant/fare.git", :branch => "master" }
+  s.platform     = :ios, '7.0'
+  s.source_files  = 'Fare/**/*.{h,m}'
   s.exclude_files = '.gitignore'
-  s.resource  = "Fare/Resources/Misc/Fare-Info.plist"
   s.requires_arc = true
   s.dependency 'Mantle', '~> 1.3'
   s.dependency 'AFNetworking', '~> 2.0.3'
