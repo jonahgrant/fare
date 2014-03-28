@@ -15,7 +15,7 @@
 
 + (NSValueTransformer *)colorJSONTransformer {
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *color) {
-        return [UIColor colorFromHexString:color];
+        return [UIColor colorFromHexString:[color stringByReplacingOccurrencesOfString:@"#" withString:@""]];
     } reverseBlock:^id(UIColor *color) {
         return [UIColor hexStringFromUIColor:color];
     }];
